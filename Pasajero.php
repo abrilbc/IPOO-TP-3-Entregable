@@ -15,14 +15,6 @@
  * especiales y requiere silla de ruedas, asistencia y comida especial entonces el pasaje tiene un incremento del 
  * 30%; si solo requiere uno de los servicios prestados entonces el incremento es del 15%. Por último, para los 
  * pasajeros comunes el porcentaje de incremento es del 10 %.
- * 
- * Modificar la clase viaje para almacenar el costo del viaje, la suma de los costos abonados por los pasajeros 
- * e implementar el método venderPasaje($objPasajero) que debe incorporar el pasajero a la colección de pasajeros 
- * (solo si hay espacio disponible), actualizar los costos abonados y retornar el costo final que deberá ser 
- * abonado por el pasajero. 
- * 
- * Implemente la función hayPasajesDisponible() que retorna verdadero si la cantidad de 
- * pasajeros del viaje es menor a la cantidad máxima de pasajeros y falso caso contrario
  */
 class Pasajero{
     private $nombre;
@@ -56,6 +48,10 @@ class Pasajero{
     public function setNroTicket($nroTicket)
     {
         $this->nroTicket = $nroTicket;
+    }
+    public function darPorcentajeIncremento() {
+        $incremento = 10;
+        return $incremento;
     }
     public function __toString(){
         return  "\nNombre: " . $this->getNombre() . 
