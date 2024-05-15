@@ -16,5 +16,9 @@ $objPasajero6 = new PasajeroNecesidadesEspeciales("Daniela", 6, 100006, 3);
 
 $viajeFeliz->venderPasaje($objPasajero1);
 $viajeFeliz->venderPasaje($objPasajero2);
+$viajeFeliz->venderPasaje($objPasajero3);
+$viajeFeliz->venderPasaje($objPasajero4);
+$viajeFeliz->venderPasaje($objPasajero5);
+$viajeFeliz->venderPasaje($objPasajero6);
 
-echo $viajeFeliz;
+// echo $viajeFeliz;

@@ -108,6 +108,7 @@ class Viaje{
         }
         return $cadena;
     }
+    
     public function __toString() {
         $info_viaje =   "\n------------VIAJE FELIZ------------" . 
                         "\nCódigo del Viaje: " . $this->getCodigo() .
