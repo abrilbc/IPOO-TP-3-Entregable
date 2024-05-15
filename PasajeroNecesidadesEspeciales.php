@@ -17,10 +17,10 @@ class PasajeroNecesidadesEspeciales extends Pasajero{
     public function darPorcentajeIncremento() {
         $incremento = parent::darPorcentajeIncremento();
         if ($this->getCantServicios() == 3) {
-            $incremento += 30;
+            $incremento = 30;
         }
         elseif ($this->getCantServicios() == 1) {
-            $incremento += 15;
+            $incremento = 15;
         }
         return $incremento;
     }
