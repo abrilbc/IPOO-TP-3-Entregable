@@ -21,4 +21,4 @@ $viajeFeliz->venderPasaje($objPasajero4);
 $viajeFeliz->venderPasaje($objPasajero5);
 $viajeFeliz->venderPasaje($objPasajero6);
 
-// echo $viajeFeliz;
+echo $viajeFeliz;

@@ -74,7 +74,7 @@ class Viaje{
     }
 //Métodos y funciones del objeto
 
-    /** Función que devuelve true si el viaje está lleno, false si no lo está
+    /** Función que devuelve false si no hay pasaje disponible, true si lo hay
      * @return bool $full
      */
     public function HayPasajeDisponible() {
