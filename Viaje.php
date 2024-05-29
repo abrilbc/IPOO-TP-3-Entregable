@@ -14,14 +14,16 @@ class Viaje{
     private $destino;
     private $cantMaxima;
     private $colObjPasajeros;
+    private $objResponsable;
 //Metodo constructor 
-    public function __construct($costoViaje, $codigo, $destino, $cantMaxima, $colObjPasajeros) {
+    public function __construct($costoViaje, $codigo, $destino, $cantMaxima, $colObjPasajeros, $objResponsable) {
         $this->costoViaje = $costoViaje;
         $this->sumaCostosAbonados = 0;
         $this->codigo = $codigo;
         $this->destino = $destino;
         $this->cantMaxima = $cantMaxima;
         $this->colObjPasajeros = $colObjPasajeros;
+        $this->objResponsable = $objResponsable;
     }
 //Métodos de Acceso
     public function getCostoViaje()
@@ -72,6 +74,14 @@ class Viaje{
     {
         $this->colObjPasajeros = $colObjPasajeros;
     }
+    public function setObjResponsable($objResponsable)
+    {
+        $this->objResponsable = $objResponsable;
+    }
+    public function getObjResponsable()
+    {
+        return $this->objResponsable;
+    }
 //Métodos y funciones del objeto
 
     /** Función que devuelve false si no hay pasaje disponible, true si lo hay
@@ -115,7 +125,8 @@ class Viaje{
                         "\nCosto: $" . $this->getCostoViaje() . 
                         "\nTotal de lo Abonado: " . $this->getSumaCostosAbonados() .
                         "\nDestino: " . $this->getDestino() . 
-                        "\nCantidad Máxima de Pasajeros: " . $this->getCantMaxima() . 
+                        "\nCantidad Máxima de Pasajeros: " . $this->getCantMaxima() .
+                        "\n------------RESPONSABLE------------" . $this->getObjResponsable() .
                         "\n-----------------------------------\n" .
                         "\n-------------PASAJEROS-------------\n";
         $info_viaje .= $this->mostrarColPasajeros();

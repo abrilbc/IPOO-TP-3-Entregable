@@ -4,9 +4,11 @@ include_once 'PasajeroEstandar.php';
 include_once 'PasajeroNecesidadesEspeciales.php';
 include_once 'PasajeroVIP.php';
 include_once 'Viaje.php';
+include_once 'ResponsableV.php';
 
+$viajeResponsable = new ResponsableV(2514, 85550, "Camila", "Gonzales");
 
-$viajeFeliz = new Viaje(85000, 8545, "Buenos Aires", 50, []);
+$viajeFeliz = new Viaje(85000, 8545, "Buenos Aires", 50, [], $viajeResponsable);
 $objPasajero1 = new PasajeroEstandar("Christopher", 1, 100001);
 $objPasajero2 = new PasajeroEstandar("Franco", 2, 100002);
 $objPasajero3 = new PasajeroVIP("Victoria", 3, 100003, 1523, 500);

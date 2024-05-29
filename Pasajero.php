@@ -55,7 +55,7 @@ class Pasajero{
     }
     public function __toString(){
         return  "\nNombre: " . $this->getNombre() . 
-                "\nNúmero de Aiento: " . $this->getNroAsiento() . 
+                "\nNúmero de Asiento: " . $this->getNroAsiento() . 
                 "\nNúmero de Ticket: " . $this->getNroTicket();
     }
 }
